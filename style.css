@@ -1,0 +1,18 @@
+body {
+  background: gray;
+}
+
+/* Fix to make card- group two cards on tablet. */
+@media (min-width: 576px) {
+.card-columns {
+  column-count: 2;
+};
+}
+
+@media (min-width: 800px) {
+  .card-columns {
+    column-count: 3;
+  };
+  }
+
+/* Fix the links to be under name on tablet. */
