@@ -134,3 +134,7 @@ nav{
 	color:whitesmoke;
 	
 }
+[class*="col-"] {
+	margin-top: 15px;
+
+  }
