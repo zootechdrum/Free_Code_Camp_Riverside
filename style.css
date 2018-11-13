@@ -1,3 +1,19 @@
 html {
 	background-color: red;
 }
+/* CSS for Members area. */
+.card-columns .card {
+	background-color: transparent;
+}
+/* Fix to make card- group two cards on tablet. */
+@media (min-width: 576px) {
+	.card-columns {
+		column-count: 2;
+	};
+}
+/* Fix the links to be under name on tablet. */
+@media (min-width: 800px) {
+	.card-columns {
+		column-count: 3;
+	};
+}
