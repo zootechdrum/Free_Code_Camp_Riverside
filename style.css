@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
   background: gray;
 }
@@ -9,16 +8,10 @@ body {
   column-count: 2;
 };
 }
-
+/* Fix the links to be under name on tablet. */'
 @media (min-width: 800px) {
   .card-columns {
     column-count: 3;
   };
   }
 
-/* Fix the links to be under name on tablet. */
-=======
-html {
-	background-color: red;
-}
->>>>>>> 5a68771b9887f3a898f0fb9d082611e4047934a2
