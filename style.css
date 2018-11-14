@@ -1,10 +1,18 @@
-nav{
+.navbar-collapse{
+	justify-content: flex-end;
+}
+
+.navbar{
+	padding: 0;
+}
+
+
+/*nav{
 	position: fixed;
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 	height: 50px;
-	background-color: green;
 	box-shadow: 0px 2px 2px 0px gray;
 }
 
@@ -50,6 +58,7 @@ nav{
 	color: white;
 	width: 100%;
 	height: 100%;
+	font-size: 1em;
 }
 
 .nav-btn-container li:hover .nav-btn-more{
@@ -82,7 +91,7 @@ nav{
 }
 
 .mobile-nav-btn-container{
-	display: none;
+	/*display: none;*/
 	color: white;
 	width: 100%;
 	justify-content: flex-end;
@@ -113,14 +122,8 @@ nav{
 	to{top: 40px; opacity: 1;}
 }
 
-@media screen and (max-width: 1024px) {
-	.nav-btn-container{
-		display: none;
-	}
-	.mobile-nav-btn-container{
-		display: flex;
-	}
+@media screen and (max-width: 1200px) {
 	.nav-title-container a{
 		font-size: 1.25em;
 	}
-}
+}*/
