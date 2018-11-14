@@ -20,58 +20,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
-<!--     <nav class="bg-success">
-  		<div class="nav-title-container">
-  			<a class="navbar-brand" href="">freeCodeCamp Riverside</a>
-  		</div>
-  		<div class="mobile-nav-btn-container d-flex d-lg-none">
-  			<button><p>More</p></button>
-  		</div>
-    	<div class="nav-btn-container d-none d-lg-block d-xl-block">
-    		<ul>
-    			<li>
-    				<a href="">Btn 1</a>
-    				<div class="nav-btn-more">
-    					<a href="">Btn 1 More</a>
-    					<a href="">Btn 1 More</a>
-    				</div>
-    			</li>
-    			<li>
-    				<a href="">Btn 2</a>
-    				<div class="nav-btn-more">
-    					<a href="">Btn 2 More</a>
-    					<a href="">Btn 2 More</a>
-    				</div>
-    			</li>
-    			<li>
-    				<a href="">Btn 3</a>
-    			</li>
-    			<li>
-    				<a href="">Btn 4</a>
-    			</li>
-    			<li>
-    				<a href="">Login</a>
-    			</li>
-    		</ul>
-    	</div>
-    </nav> -->
-
-	<nav class="navbar navbar-expand-lg navbar-light bg-success">
-	  <a class="navbar-brand text-white" href="#">Navbar</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	<nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">
+	  <a class="navbar-brand text-white w-100 text-center" id="test" href="#">freeCodeCamp Riverside</a>
+	  <button class="navbar-toggler position-absolute mt-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav">
-	      <li class="nav-item active">
-	        <a class="nav-link text-white h-100 d-inline-block" href="#">Btn 1<span class="sr-only">(current)</span></a>
+	  <div class="collapse navbar-collapse justify-content-end w-100" id="navbarNav">
+	    <ul class="navbar-nav mr-5">
+	      <li class="nav-item text-center position-relative">
+	        <a class="nav-link text-white d-inline-block" href="#">Btn 1</a>
+            <div class="nav-btn-more position-absolute flex-column justify-content-center float-left">
+              <a class="text-body d-flex justify-content-center align-items-center" href="">Btn 1 More</a>
+              <a class="text-body d-flex justify-content-center align-items-center" href="">Btn 1 More</a>
+            </div>
 	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link text-white" href="#">Btn 2</a>
+	      <li class="nav-item text-center position-relative">
+	        <a class="nav-link text-white d-inline-block" href="#">Btn 2</a>
+            <div class="nav-btn-more position-absolute flex-column justify-content-center float-left">
+              <a class="text-body d-flex justify-content-center align-items-center" href="">Btn 2 More</a>
+              <a class="text-body d-flex justify-content-center align-items-center" href="">Btn 2 More</a>
+            </div>
 	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link text-white" href="#">Btn 3</a>
+	      <li class="nav-item text-center position-relative">
+	        <a class="nav-link text-white d-inline-block" href="#">Btn 3</a>
 	      </li>
+          <li class="nav-item text-center position-relative">
+            <a class="nav-link text-white d-inline-block" href="#">Login</a>
+          </li>
 	    </ul>
 	  </div>
 	</nav>

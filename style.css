@@ -1,129 +1,53 @@
-.navbar-collapse{
-	justify-content: flex-end;
+nav a{
+	font-size: 1.25em;
 }
 
-.navbar{
-	padding: 0;
+#test{
+	font-size: 1.75em;
 }
 
-
-/*nav{
-	position: fixed;
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	height: 50px;
-	box-shadow: 0px 2px 2px 0px gray;
+.nav-link{
+	width: 100px;
 }
 
-.nav-title-container{
-	display: flex;
-	align-items: center;
-	width: 100%;
-}
-
-.nav-title-container a{
-	width: 100%;
-	color: white;
-	text-align: center;
-	font-size: 2em;
-}
-
-.nav-title-container a:hover{
-	text-decoration: none;
-	color: white;
-}
-
-.nav-btn-container{
-	width: 100%;
-}
-
-.nav-btn-container ul{
-	list-style: none;
-	height: 100%;
-}
-
-.nav-btn-container li{
-	position: relative;
-	height: 100%;
-	width: 75px;
-	float: left;
-}
-
-.nav-btn-container a{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	color: white;
-	width: 100%;
-	height: 100%;
-	font-size: 1em;
-}
-
-.nav-btn-container li:hover .nav-btn-more{
-	display: flex;
-	-webkit-animation: btn-more-enter .75s;
-	animation: btn-more-enter .5s;
+.navbar-toggler{
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .nav-btn-more{
-	position: absolute;
 	display: none;
-	flex-direction: column;
-	justify-content: center;
 	width: 120%;
-	float: left;
 	background-color: rgb(230, 230, 230);
 	box-shadow: 0px 2px 2px 0px gray;
-	top: 40px;
+	top: 100%;
 }
 
 .nav-btn-more a{
-	padding-top: 0;
 	height: 40px;
 	font-size: 0.75em;
-	color: black;
-}
-
-.nav-btn-more a:hover{
-	background-color: rgb(204, 204, 204);
-}
-
-.mobile-nav-btn-container{
-	/*display: none;*/
-	color: white;
-	width: 100%;
-	justify-content: flex-end;
-}
-
-.mobile-nav-btn-container button{
-	width: 75px;
-	border: none;
-	background: none;
-	color: white;
-	margin: 0;
-	padding: 0;
-	outline: none;
-	cursor: pointer;
-}
-
-.mobile-nav-btn-container p {
-	margin: 0;
+	text-decoration: none;
 }
 
 @-webkit-keyframes btn-more-enter{
-	from{top: 20px; opacity: 0;}
-	to{top: 40px; opacity: 1;}
+	from{top: 0%; opacity: 0;}
+	to{top: 100%; opacity: 1;}
 }
 
 @keyframes btn-more-enter{
-	from{top: 20px; opacity: 0;}
-	to{top: 40px; opacity: 1;}
+	from{top: 0%; opacity: 0;}
+	to{top: 100%; opacity: 1;}
 }
 
-@media screen and (max-width: 1200px) {
-	.nav-title-container a{
-		font-size: 1.25em;
+@media screen and (min-width: 992px){
+	.nav-btn-more a:hover{
+		background-color: rgb(204, 204, 204);
 	}
-}*/
+
+	.navbar-nav li:hover .nav-btn-more{
+		display: flex;
+		-webkit-animation: btn-more-enter .5s;
+		animation: btn-more-enter .5s;
+	}
+}
