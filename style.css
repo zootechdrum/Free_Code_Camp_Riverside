@@ -9,10 +9,6 @@ nav{
 	z-index: 2;
 }
 
-.nav-title-container{
-	display: flex;
-	align-items: center;
-	width: 100%;
 }
 
 .nav-title-container a{
