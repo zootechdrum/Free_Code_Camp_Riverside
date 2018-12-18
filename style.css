@@ -10,3 +10,39 @@
  .nav-link{
 	color:white;
 }
+
+/* Responsive Breakpoints */
+
+/*  Extra small devices (portrait phones, less than 576px) No media query for `xs` since this is the default in Bootstrap */
+.navbar-brand {
+	font-size: 1.5em;
+}
+
+@media (max-width: 380px) {
+	.nav {
+		display: block;
+		margin-right:auto;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.navbar-brand {
+		font-size:2em;
+	}	
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.justify-content-center {
+		justify-content: initial !important;
+	}
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
