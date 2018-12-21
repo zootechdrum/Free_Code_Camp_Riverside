@@ -1,12 +1,135 @@
+
+/*Used to for rem 1 rem = 10px*/
+html{
+	font-size:62.5%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border-sizing:border-box;
+}
+
+body{
+	font-family: "lato", sans-serif;
+	font-weight: 400;
+	line-height:1.7;
+	color: #777;
+	height:100%;
+}
+
+nav{
+	font-size:1.6rem;
+}
+
 .bg-green{
-	background-color:darkgreen;
+	background-color:#69C87F ;
 }
 
 .navbar-brand{
-	font-size:2em;
+	font-size:2rem;
 	color:white;
 }
 
  .nav-link{
 	color:white;
+}
+
+.header {
+	height: 90vh;
+}
+
+.text-box{
+	position:absolute;
+	top: 40%;
+	left:50%;
+	transform: translate(-50%, 0%);
+}
+
+.heading-primary {
+	color: #000000;
+	text-transform: uppercase;
+	/*the below code removes the jump caused ny animatimon. it is a hack*/
+	backface-visibility: hidden;
+}
+
+.heading-primary-main {
+	display:block;
+	font-size: 6rem;
+	font-weight:400;
+	letter-spacing: 1rem;
+	animation: moveInLeft 2s ease-out;
+
+
+}
+.heading-primary-sub {
+	display:block;
+	font-size:2rem;
+	letter-spacing:.2rem;
+	font-weight: 700;
+	text-align:center;
+	animation: moveInRight 2s ease-out
+}
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-90px)
+	}
+	70%{
+		transform:translateX(10px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translate(0)
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(90px)
+	}
+	70%{
+		transform:translateX(-10px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translate(0)
+	}
+}
+
+.footer{
+	width:100%;
+	padding: 10px;
+	background-color:#69C87F;
+	position:relative;
+	margin-top:-30px;
+	font-size: 1.1rem;
+	color:white;
+	display:flex;
+	justify-content: space-between;
+	
+}
+.footer-list{
+	padding-left:10%;
+	list-style-type: none;
+	font-size:1.3rem;
+}
+.footer-icons{
+	margin-top:1.5%;
+}
+
+.fab{
+	padding-right: 20px;
+	font-size:1.7rem;
+	color: white;
+	transition:.3s;
+}
+.fab:hover{
+	color:black;
+	animation: .2s;
+	cursor:pointer;
 }
