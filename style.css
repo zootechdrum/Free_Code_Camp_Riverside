@@ -7,7 +7,7 @@ html{
 * {
 	margin: 0;
 	padding: 0;
-	border-sizing:border-box;
+	box-sizing:border-box;
 }
 
 body{
@@ -49,7 +49,7 @@ nav{
 .heading-primary {
 	color: #000000;
 	text-transform: uppercase;
-	/*the below code removes the jump caused ny animatimon. it is a hack*/
+	/*the below code removes the jump caused by animatimon. it is a hack*/
 	backface-visibility: hidden;
 }
 
