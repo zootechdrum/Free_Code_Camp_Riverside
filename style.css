@@ -10,6 +10,11 @@ html{
 	box-sizing:border-box;
 }
 
+a:hover{
+	text-decoration: none;
+	color: initial;
+}
+
 body{
 	font-family: "lato", sans-serif;
 	font-weight: 400;
@@ -19,7 +24,32 @@ body{
 }
 
 nav{
-	font-size:1.6rem;
+	font-size: 1.6rem;
+}
+.nav-title{
+	font-size: 2.5rem;
+	color: white;
+	font-family: "Times New Roman";
+}
+.nav-sign-up{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 110px;
+	height: 40px;
+	background-color: white;
+	border: rgba(243, 243, 228, .85) solid 1px;
+	border-radius: 3px;
+	box-shadow: 0px 3px 3px 0px gray;
+	color: #69C87F;
+	font-size: 1.35rem;
+}
+.nav-sign-up:hover,
+.nav-sign-up:active{
+	background-color: #F1F9FF;
+}
+.nav-sign-up:active{
+	box-shadow: none;
 }
 
 .bg-green{
@@ -33,6 +63,9 @@ nav{
 
  .nav-link{
 	color:white;
+}
+.dropdown-item{
+	font-size: 1.35rem;
 }
 
 .header {
