@@ -137,7 +137,6 @@ nav{
 ABOUT US SECTION
 ************************************/
 #aboutus-div {
-	width: auto;
 	height: auto;
 	background-color: #69C87F;
 	font-family: Arial;
@@ -145,55 +144,63 @@ ABOUT US SECTION
 	padding: 0;
 	margin: 0;
 }
+
 #aboutus-div > img {
 	display: block;
-	margin: auto;
-	padding-top: 65px;
+	margin: 0 auto;
+	padding: 65px 0 0 0;
 }
 
 #aboutus-div h1 {
 	font-size: 75px;
-	margin-top: 40px;
+	margin: 40px auto 0 auto;
+	padding: 0;
 }
+
 #aboutus-div p {
 	font-size: 20px;
-	font-family: Arial;
 	margin: 55px auto 0 auto;
 	width: 80%;
+	padding: 0;
 }
 /************************************
 GOALS SECTION
 ************************************/
 #goals-div {
+	height: 100%;
 	margin: 0;
-	padding-bottom: 136px;
+	padding: 0 auto 136px auto;
 	background-color: #69C87F;
 	font-family: Arial;
 	color: white;
 }
-.goals-inner-div {
-	width: 80%;
-	margin: 0 auto;
-	padding-top: 130px;
-}
-#goals-div > img {
-	display: block;
-}
-#goals-div p {
-	font-size: 20px;
-	font-family: Arial;
-	margin-top: 55px;
-}
+
 #goals-div h2 {
 	font-size: 50px;
 	text-decoration: underline;
 	padding-top: 140px;
 }
-#goals-div h3 {
+
+#goals-inner-div {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 130px;
+}
+
+#goals-inner-div > img {
+	display: block;
+}
+
+#goals-inner-div h3 {
 	font-size: 45px;
 	font-weight: bold;
 }
 
+#goals-inner-div p {
+	font-size: 20px;
+	font-family: Arial;
+	margin-top: 55px;
+}
 /************************************
 EVENTS SECTION
 ************************************/
