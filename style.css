@@ -133,7 +133,78 @@ nav{
 		transform: translate(0)
 	}
 }
+/************************************
+ABOUT US SECTION
+************************************/
+#aboutus-div {
+	width: auto;
+	height: auto;
+	background-color: #69C87F;
+	font-family: Arial;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+#aboutus-div > img {
+	display: block;
+	margin: auto;
+	padding-top: 65px;
+}
 
+#aboutus-div h1 {
+	font-size: 75px;
+	margin-top: 40px;
+}
+#aboutus-div p {
+	font-size: 20px;
+	font-family: Arial;
+	margin: 55px auto 0 auto;
+	width: 80%;
+}
+/************************************
+GOALS SECTION
+************************************/
+#goals-div {
+	margin: 0;
+	padding-bottom: 136px;
+	background-color: #69C87F;
+	font-family: Arial;
+	color: white;
+}
+.goals-inner-div {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 130px;
+}
+#goals-div > img {
+	display: block;
+}
+#goals-div p {
+	font-size: 20px;
+	font-family: Arial;
+	margin-top: 55px;
+}
+#goals-div h2 {
+	font-size: 50px;
+	text-decoration: underline;
+	padding-top: 140px;
+}
+#goals-div h3 {
+	font-size: 45px;
+	font-weight: bold;
+}
+
+/************************************
+EVENTS SECTION
+************************************/
+.events {
+	width: auto;
+	height: 500px;
+}
+
+/************************************
+FOOTER SECTION
+************************************/
 .footer{
 	width:100%;
 	padding: 10px;
