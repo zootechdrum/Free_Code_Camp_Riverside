@@ -1,0 +1,75 @@
+input[type=text] {
+	border: none;
+	resize: vertical;
+}
+textarea {
+	height: 300px;
+	width: 900px;
+	border: 2px solid #69C87F;
+	resize: none;
+	margin-bottom: 10px;
+	resize: none;
+}
+.contact-container{
+	height: 250px;
+	width: 100%;
+	background-color: #69C87F;
+
+}
+.headerline {
+	width: 90px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-top: 65px;
+  	padding-bottom: 20px;
+	}
+
+.contactus {
+	color: white;
+	font-size: 75px;
+	font-family: Arial;
+	text-align: center;
+}
+.contact2 {
+	display: flex;
+	width: 1000px
+	height: 1060px;
+	font-size: 30px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #69C87F;
+	justify-content: center;
+	padding: 110px;
+}
+
+.formline{
+	border-bottom: 2px #69C87F solid;
+	display: block;
+	width: 450px;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #69C87F;
+	border: none;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	width: 240px;
+	height: 80px;
+	margin-bottom: 40px;
+	float: right;
+}
+
+.btn:hover {
+	background-color: green;
+}
+
+@media screen and (max-width: 900px) {
+	.contact2, .formline, input[type=text], textarea {
+		width: 100%;
+		margin-top: 0;
+	}
+}
