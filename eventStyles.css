@@ -1,0 +1,73 @@
+.event-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+}
+.event-header-line{
+    width: 50px;
+    margin-top: 65px;
+}
+.header-text{
+    font-size: 75px;
+    font-family: Arial;
+    margin-top: 40px;
+    color: #69C87F;
+}
+.date-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+}
+.date-text{
+    font-size: 35px;
+    font-family: Arial;
+    color: black;
+    border-bottom: solid #69C87F
+}
+.location-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.location-list{
+    font-size: 25px;
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    list-style-type: none;
+}
+.location-list li{
+    margin: 10px;
+}
+.location-maps{
+    width: 500px;
+    height: 250px;
+    margin-left: 90px;
+}
+.last-date-container{
+    margin-bottom: 100px;
+}
+@media screen and (max-width: 991.98px){
+.header-text{
+    text-align: center;
+    font-size: 45px;
+}
+.location-list{
+    font-size: 20px;
+}
+.location-container{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.location-maps{
+    width: 500px;
+    height: 250px;
+    margin-left: 0px;
+}
+}

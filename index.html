@@ -1,21 +1,20 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <title>FreeCodeCamp Riverside</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <script src="handlebars-v4.0.12.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet"   type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="eventStyles.css" />
+  </head>
 
-<head>
-  <title>FreeCodeCamp Riverside</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <script src="handlebars-v4.0.12.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-
-<body>
-
+  <body>
   <nav class="py-4 navbar navbar-expand-lg bg-green d-flex align-items-center">
     <h1 class="w-75 text-left text-lg-center ml-4 nav-title" href="#">freeCodeCamp Riverside</h1>
     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,21 +34,23 @@
       </ul>
     </div>
   </nav>
+
   <!--This is the end of the navbar-->
 
+  <!--This is the start of the landing section-->    
   <div class="container">
     <header class="header">
       <div class="text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary-main">FreeCodeCamp</span>
-          <span class="heading-primary-sub">Riverside, Ca</span>
-        </h1>
+          <h1 class="heading-primary">
+              <span class="heading-primary-main">FreeCodeCamp</span>
+              <span class="heading-primary-sub">Riverside, CA</span>
+          </h1>
       </div>
     </header>
   </div>
-  <!--This is the end of the Header Section-->
+  <!--This is the end of the landing section-->
 
-
+  <!--This is the start of the About Us Section-->
   <div class="container-fluid" id="aboutus-div">
     <img src="/Free_Code_Camp_Riverside/public/images/section-headers/header-line-white.svg" width="75px" alt="linebreak">
     <h1 class="text-center">ABOUT US</h1>
@@ -60,9 +61,6 @@
     </p>
   </div>
   <!--This is the end of the About Us Section-->
-
-
-
 
   <div class="container-fluid" id="goals-div">
     <h2 class="text-center">GOALS</h2>
@@ -91,27 +89,45 @@
   </div>
   <!--This is the end of the Goals Section-->
 
-
-
-
-
-
-
-
-
-
-  <div class="container-fluid bg-white py-3">
-    <div class="events text-center">
-      <h1>Upcoming Events</h1>
-      <hr>
-      <p>Coming Soon...</p>
-    </div>
+  <!--This is the start of the events section-->
+  <div class="container event-container">
+    <img class="event-header-line" src="./public/images/section-headers/header-line-green.svg"  alt="green-line">
+    <h2 class="header-text">Upcoming Events</h2>
+      <div class="container date-container">
+        <p class="date-text">1/13/2019 Meeting</p>
+        <div class="container location-container">
+          <ul class="location-list">
+            <li>Time: 11:00 A.M.</li>
+            <li>Location: 1280 W Blaine St A,</li>
+            <li>Riverside, CA 92507</li>
+          </ul>
+          <img class="location-maps" src="./public/images/events-section/google-maps.png" alt="maps-location">
+        </div>
+      </div>
+      <div class="container date-container">
+        <p class="date-text">1/27/2019 Meeting</p>
+        <div class="container location-container">
+          <ul class="location-list">
+            <li>Time: 11:00 A.M.</li>
+            <li>Location: 1280 W Blaine St A,</li>
+            <li>Riverside, CA 92507</li>
+          </ul>
+          <img class="location-maps" src="./public/images/events-section/google-maps.png" alt="maps-location">
+        </div>
+      </div>
+      <div class="container date-container last-date-container">
+        <p class="date-text">2/14/2019 Meeting</p>
+        <div class="container location-container">
+          <ul class="location-list">
+            <li>Time: 11:00 A.M.</li>
+            <li>Location: 1280 W Blaine St A,</li>
+            <li>Riverside, CA 92507</li>
+          </ul>
+          <img class="location-maps" src="./public/images/events-section/google-maps.png" alt="maps-location">
+        </div>
+      </div>
   </div>
-  <!--This is the end of the Events Section-->
-
-
-
-
+  <!--This is the end of the events section-->
 
   <footer>
     <div class="footer">
@@ -127,12 +143,6 @@
     </div>
   </footer>
   <!--This is the end of the footer-->
-
-
-
-
-
-
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
