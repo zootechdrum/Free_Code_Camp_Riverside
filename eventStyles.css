@@ -52,7 +52,7 @@ li{
 .last-date-container{
     margin-bottom: 100px;
 }
-@media (max-width: 900px){
+@media screen and (max-width: 991.98px){
 .header-text{
     text-align: center;
 }
