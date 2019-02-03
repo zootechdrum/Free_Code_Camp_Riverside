@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>FreeCodeCamp Riverside</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,43 +12,125 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <link rel="stylesheet"   type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="contactstyle.css">
+    <link rel="stylesheet" type="text/css" href="eventStyles.css" />
   </head>
 
   <body>
   <nav class="py-4 navbar navbar-expand-lg bg-green d-flex align-items-center">
     <h1 class="w-75 text-left text-lg-center ml-4 nav-title" href="#">freeCodeCamp Riverside</h1>
-      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="w-100 collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="#">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="#">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="w-100 collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <!--This is the end of the navbar-->
-    
-    <div class="container">
-      <header class="header">
-        <div class="text-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary-main">FreeCodeCamp</span>
-                <span class="heading-primary-sub">Riverside, CA</span>
-            </h1>
+  <!--This is the end of the navbar-->
+
+  <!--This is the start of the landing section-->    
+  <div class="container">
+    <header class="header">
+      <div class="text-box">
+          <h1 class="heading-primary">
+              <span class="heading-primary-main">FreeCodeCamp</span>
+              <span class="heading-primary-sub">Riverside, CA</span>
+          </h1>
+      </div>
+
+
+
+  <!--This is the start of the About Us Section-->
+  <div class="container-fluid" id="aboutus-div">
+    <img src="/Free_Code_Camp_Riverside/public/images/section-headers/header-line-white.svg" width="75px" alt="linebreak">
+    <h1 class="text-center">ABOUT US</h1>
+    <p class="text-center">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. In fermentum et sollicitudin ac orci phasellus egestas.
+      Risus commodo viverra maecenas accumsan lacus vel facilisis. Viverra justo nec ultrices dui sapien eget mi.
+    </p>
+  </div>
+  <!--This is the end of the About Us Section-->
+
+  <div class="container-fluid" id="goals-div">
+    <h2 class="text-center">GOALS</h2>
+
+    <div id="goals-inner-div">
+      <div class="row text-center flex-column flex-sm-row">
+        <div class="col">
+          <img src="./public/images/about-us-section/network-icon.svg" width="100px" alt="network icon">
+          <h3>NETWORK</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ac turpis egestas maecenas pharetra. A arcu cursus vitae congue mauris rhoncus aenean vel.
+          </p>
         </div>
-      </header>
+        <div class="col">
+          <img src="./public/images/about-us-section/experience-icon.svg" width="100px" alt="experience icon">
+          <h3>EXPERIENCE</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ac turpis egestas maecenas pharetra. A arcu cursus vitae congue mauris rhoncus aenean vel.
+          </p>
+        </div>
       </div>
+    </div>
 
-      <!--This is the start of the contact section-->
+  </div>
+  <!--This is the end of the Goals Section-->
+
+  <!--This is the start of the events section-->
+  <div class="container event-container">
+    <img class="event-header-line" src="./public/images/section-headers/header-line-green.svg"  alt="green-line">
+    <h2 class="header-text">Upcoming Events</h2>
+      <div class="container date-container">
+        <p class="date-text">1/13/2019 Meeting</p>
+        <div class="container location-container">
+          <ul class="location-list">
+            <li>Time: 11:00 A.M.</li>
+            <li>Location: 1280 W Blaine St A,</li>
+            <li>Riverside, CA 92507</li>
+          </ul>
+          <img class="location-maps" src="./public/images/events-section/google-maps.png" alt="maps-location">
+        </div>
+      </div>
+      <div class="container date-container">
+        <p class="date-text">1/27/2019 Meeting</p>
+        <div class="container location-container">
+          <ul class="location-list">
+            <li>Time: 11:00 A.M.</li>
+            <li>Location: 1280 W Blaine St A,</li>
+            <li>Riverside, CA 92507</li>
+          </ul>
+          <img class="location-maps" src="./public/images/events-section/google-maps.png" alt="maps-location">
+        </div>
+      </div>
+      <div class="container date-container last-date-container">
+        <p class="date-text">2/14/2019 Meeting</p>
+        <div class="container location-container">
+          <ul class="location-list">
+            <li>Time: 11:00 A.M.</li>
+            <li>Location: 1280 W Blaine St A,</li>
+            <li>Riverside, CA 92507</li>
+          </ul>
+          <img class="location-maps" src="./public/images/events-section/google-maps.png" alt="maps-location">
+        </div>
+      </div>
+  </div>
+  <!--This is the end of the events section-->
+
+
+  <!--This is the start of the contact section-->
       <div>
         <div class="contact-container">
            <img class="headerline" src="./public/images/section-headers/header-line-white.svg">
@@ -77,34 +159,26 @@
       </div>
       <!--This is the end of the contact section-->
 
-      <!--Footer section below-->
-      <footer>
-        <div class="footer">
-          <ul class="footer-list">
-            <li>About Us</li>
-            <li>Contact</li>
-            <li>Terms and Conditions</li>
-          </ul>
-          <div class="footer-icons">
-              <a href="https://github.com/zootechdrum/Free_Code_Camp_Riverside"><i class="fab fa-github"></i></a>
-              <a href="https://www.facebook.com/groups/free.code.camp.riverside.ca/"><i class="fab fa-facebook"></i></a>
-          </div>
-        </div>
-        </footer>
+  <footer>
+    <div class="footer">
+      <ul class="footer-list">
+        <li>About Us</li>
+        <li>Contact</li>
+        <li>Terms and Conditions</li>
+      </ul>
+      <div class="footer-icons">
+        <a href="https://github.com/zootechdrum/Free_Code_Camp_Riverside"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/groups/free.code.camp.riverside.ca/"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!--This is the end of the footer-->
 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
 
-
-
-
-  
-  
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-  </body>
 </html>
-
-
