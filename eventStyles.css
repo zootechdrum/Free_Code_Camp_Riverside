@@ -33,15 +33,14 @@
     justify-content: center;
     margin-top: 50px;
 }
-.location-text{
+.location-list{
     font-size: 25px;
-    font-weight: bold; 
     font-family: Arial;
     color: black;
     text-align: center;
     list-style-type: none;
 }
-li{
+.location-list li{
     margin: 10px;
 }
 .location-maps{
@@ -55,8 +54,13 @@ li{
 @media screen and (max-width: 991.98px){
 .header-text{
     text-align: center;
+    font-size: 45px;
+}
+.location-list{
+    font-size: 20px;
 }
 .location-container{
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     align-content: center;
