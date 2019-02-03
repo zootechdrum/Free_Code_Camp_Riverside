@@ -1,246 +1,291 @@
-
 /*Below font-size converts the font size so 1rem = 10px*/
-html{
-	font-size:62.5%;
+html {
+  font-size: 62.5%;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a:hover{
-	text-decoration: none;
-	color: initial;
+a, h1, h2, h3 {
+  font-family: "lato", sans-serif;
 }
 
-body{
-	font-family: "lato", sans-serif;
-	font-weight: 400;
-	line-height:1.7;
-	color: #777;
-	height:100%;
+a:hover {
+  text-decoration: none;
+  color: initial;
 }
 
-nav{
-	font-size: 1.6rem;
-}
-.nav-title{
-	font-size: 2.5rem;
-	color: white;
-	font-family: "Times New Roman";
-}
-.nav-sign-up{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 110px;
-	height: 40px;
-	background-color: white;
-	border: rgba(243, 243, 228, .85) solid 1px;
-	border-radius: 3px;
-	box-shadow: 0px 3px 3px 0px gray;
-	color: #69C87F;
-	font-size: 1.35rem;
-}
-.nav-sign-up:hover,
-.nav-sign-up:active{
-	background-color: #F1F9FF;
-}
-.nav-sign-up:active{
-	box-shadow: none;
+p {
+  font-family: "Arial", sans-serif;
 }
 
-.bg-green{
-	background-color:#69C87F ;
+body {
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  height: 100%;
 }
 
-.navbar-brand{
-	font-size:2rem;
-	color:white;
+nav {
+  font-size: 1.6rem;
 }
 
- .nav-link{
-	color:white;
+.nav-title {
+  font-size: 2.5rem;
+  color: white;
 }
-.dropdown-item{
-	font-size: 1.35rem;
+
+.bg-green {
+  background-color: #69C87F;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.dropdown-item {
+  font-size: 1.35rem;
 }
 
 .header {
-	height: 90vh;
+  height: 90vh;
 }
 
-.text-box{
-	position:absolute;
-	top: 40%;
-	left:50%;
-	transform: translate(-50%, 0%);
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .heading-primary {
-	color: #000000;
-	text-transform: uppercase;
-	/*the below code removes the jump caused by animatimon. it is a hack*/
-	backface-visibility: hidden;
+  color: #000000;
+  text-transform: uppercase;
+  /*the below code removes the jump caused by animatimon. it is a hack*/
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
-	display:block;
-	font-size: 6rem;
-	font-weight:400;
-	letter-spacing: 1rem;
-	animation: moveInLeft 2s ease-out;
-
-
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  animation: moveInLeft 2s ease-out;
 }
+
 .heading-primary-sub {
-	display:block;
-	font-size:2rem;
-	letter-spacing:.2rem;
-	font-weight: 700;
-	text-align:center;
-	animation: moveInRight 2s ease-out
+  display: block;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  font-weight: 700;
+  text-align: center;
+  animation: moveInRight 2s ease-out
 }
 
 @keyframes moveInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-90px)
-	}
-	70%{
-		transform:translateX(10px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateX(-90px)
+  }
 
-	100%{
-		opacity: 1;
-		transform: translate(0)
-	}
+  70% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0)
+  }
 }
 
 @keyframes moveInRight {
-	0% {
-		opacity: 0;
-		transform: translateX(90px)
-	}
-	70%{
-		transform:translateX(-10px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateX(90px)
+  }
 
-	100%{
-		opacity: 1;
-		transform: translate(0)
-	}
+  70% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0)
+  }
 }
+
 /************************************
 ABOUT US SECTION
 ************************************/
 #aboutus-div {
-	height: auto;
-	background-color: #69C87F;
-	font-family: Arial;
-	color: white;
-	padding: 0;
-	margin: 0;
+  height: auto;
+  background-color: #69C87F;
+  color: white;
+  padding: 0;
+  margin: 0;
 }
 
-#aboutus-div > img {
-	display: block;
-	margin: 0 auto;
-	padding: 65px 0 0 0;
+#aboutus-div>img {
+  display: block;
+  margin: 0 auto;
+  padding: 65px 0 0 0;
 }
 
 #aboutus-div h1 {
-	font-size: 75px;
-	margin: 40px auto 0 auto;
-	padding: 0;
+  font-size: 6rem;
+  margin: 40px auto 0 auto;
+  padding: 0;
 }
 
 #aboutus-div p {
-	font-size: 20px;
-	margin: 55px auto 0 auto;
-	width: 80%;
-	padding: 0;
+  font-size: 20px;
+  margin: 55px auto 0 auto;
+  width: 80%;
+  padding: 0;
 }
+
 /************************************
 GOALS SECTION
 ************************************/
 #goals-div {
-	height: 100%;
-	margin: 0;
-	padding: 0 auto 136px auto;
-	background-color: #69C87F;
-	font-family: Arial;
-	color: white;
+  height: 100%;
+  margin: 0;
+  padding: 0 auto 136px auto;
+  background-color: #69C87F;
+  color: white;
 }
 
 #goals-div h2 {
-	font-size: 50px;
-	text-decoration: underline;
-	padding-top: 140px;
+  font-size: 50px;
+  padding-top: 140px;
+  letter-spacing: 0.5rem;
 }
 
 #goals-inner-div {
-	width: 80%;
-	margin: 0 auto;
-	padding-top: 130px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 50px;
 }
 
-#goals-inner-div > img {
-	display: block;
+#goals-inner-div>img {
+  display: block;
 }
 
 #goals-inner-div h3 {
-	font-size: 45px;
-	font-weight: bold;
+  font-size: 30px;
 }
 
 #goals-inner-div p {
-	font-size: 20px;
-	font-family: Arial;
-	margin-top: 55px;
+  font-size: 20px;
+  margin-top: 55px;
 }
+
 /************************************
 EVENTS SECTION
 ************************************/
 .events {
-	width: auto;
-	height: 500px;
+  width: auto;
+  height: 500px;
 }
 
 /************************************
 FOOTER SECTION
 ************************************/
-.footer{
-	width:100%;
-	padding: 10px;
-	background-color:#69C87F;
-	position:relative;
-	margin-top:-30px;
-	font-size: 1.1rem;
-	color:white;
-	display:flex;
-	justify-content: space-between;
-
-}
-.footer-list{
-	padding-left:10%;
-	list-style-type: none;
-	font-size:1.3rem;
-}
-.footer-icons{
-	margin-top:1.5%;
+.footer {
+  width: 100%;
+  padding: 10px;
+  background-color: #69C87F;
+  position: relative;
+  margin-top: -30px;
+  font-size: 1.1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
-.fab{
-	padding-right: 20px;
-	font-size:1.7rem;
-	color: white;
-	transition:.3s;
+.footer-list {
+  padding-left: 10%;
+  list-style-type: none;
+  font-size: 1.3rem;
 }
-.fab:hover{
-	color:black;
-	animation: .2s;
-	cursor:pointer;
+
+.footer-icons {
+  margin-top: 1.5%;
 }
+
+.fab {
+  padding-right: 20px;
+  font-size: 1.7rem;
+  color: white;
+  transition: .3s;
+}
+
+.fab:hover {
+  color: black;
+  animation: .2s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .heading-primary-main {
+    font-size: 2rem;
+  }
+
+  #aboutus-div h1 {
+    font-size: 2rem;
+  }
+
+  #aboutus-div p {
+    font-size: 15px;
+  }
+
+  #goals-div h2 {
+    font-size: 2rem;
+  }
+
+  #goals-inner-div h3 {
+    font-size: 2rem;
+  }
+
+  #goals-inner-div p {
+    font-size: 15px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (max-width: 768px) {
+  .heading-primary-main {
+    font-size: 3rem;
+  }
+
+  #aboutus-div h1 {
+    font-size: 3rem;
+  }
+
+  #goals-div h2 {
+    font-size: 3rem;
+  }
+
+  #goals-inner-div h3 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {}
