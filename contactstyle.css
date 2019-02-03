@@ -10,7 +10,7 @@ textarea {
 	margin-bottom: 10px;
 	resize: none;
 }
-.contact-container{
+.contact-container {
 	height: 250px;
 	width: 100%;
 	background-color: #69C87F;
@@ -31,7 +31,7 @@ textarea {
 	font-family: Arial;
 	text-align: center;
 }
-.contact2 {
+.contact-form {
 	display: flex;
 	width: 1000px
 	height: 1060px;
@@ -43,7 +43,7 @@ textarea {
 	padding: 110px;
 }
 
-.formline{
+.contact-form-underline {
 	border-bottom: 2px #69C87F solid;
 	display: block;
 	width: 450px;
@@ -67,8 +67,8 @@ textarea {
 	background-color: green;
 }
 
-@media screen and (max-width: 900px) {
-	.contact2, .formline, input[type=text], textarea {
+@media screen and (max-width: 991.98px) {
+	.contact-form, .contact-form-underline, input[type=text], textarea {
 		width: 100%;
 		margin-top: 0;
 	}
