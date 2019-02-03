@@ -248,6 +248,10 @@ FOOTER SECTION
     font-size: 15px;
   }
 
+	#goals-inner-div div{
+		height: 900px;
+	}
+
   #goals-div h2 {
     font-size: 2rem;
   }
@@ -261,7 +265,7 @@ FOOTER SECTION
   }
 }
 
-// Medium devices (tablets, 768px and up)
+/* Medium devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
   .heading-primary-main {
     font-size: 3rem;
@@ -283,9 +287,3 @@ FOOTER SECTION
     font-size: 2rem;
   }
 }
-
-// Large devices (desktops, 992px and up)
-@media (max-width: 992px) {}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) {}
