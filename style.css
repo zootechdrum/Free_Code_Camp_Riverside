@@ -13,6 +13,11 @@ a, h1, h2, h3 {
   font-family: "lato", sans-serif;
 }
 
+h2{
+  font-size: 6rem;
+  margin-top: 40px;
+}
+
 a:hover {
   text-decoration: none;
   color: initial;
@@ -20,6 +25,13 @@ a:hover {
 
 p {
   font-family: "Arial", sans-serif;
+}
+
+.header-line{
+  width: 95px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 65px;
 }
 
 body {
@@ -31,6 +43,7 @@ body {
 
 nav {
   font-size: 1.6rem;
+  z-index: 2;
 }
 
 .nav-title {
@@ -56,7 +69,7 @@ nav {
 }
 
 .header {
-  height: 90vh;
+  height: 70vh;
 }
 
 .text-box {
@@ -163,7 +176,7 @@ GOALS SECTION
   color: white;
 }
 
-#goals-div h2 {
+#goals-div h3 {
   font-size: 50px;
   padding-top: 140px;
   letter-spacing: 0.5rem;
@@ -180,7 +193,7 @@ GOALS SECTION
   display: block;
 }
 
-#goals-inner-div h3 {
+#goals-inner-div h4 {
   font-size: 30px;
 }
 
@@ -192,11 +205,131 @@ GOALS SECTION
 /************************************
 EVENTS SECTION
 ************************************/
-.events {
-  width: auto;
-  height: 500px;
+.event-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+}
+.event-header-line{
+    width: 50px;
+    margin-top: 65px;
+}
+.header-text{
+    margin-top: 40px;
+    color: #69C87F;
+}
+.date-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+}
+.date-text{
+    font-size: 35px;
+    font-family: Arial;
+    color: black;
+    border-bottom: solid #69C87F
+}
+.location-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.location-list{
+    font-size: 25px;
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    list-style-type: none;
+}
+.location-list li{
+    margin: 10px;
+}
+.location-maps{
+    width: 500px;
+    height: 250px;
+    margin-left: 90px;
+}
+.last-date-container{
+    margin-bottom: 100px;
 }
 
+/************************************
+CONTACT SECTION
+************************************/
+input[type=text] {
+  border: none;
+  resize: vertical;
+}
+textarea {
+  height: 300px;
+  width: 900px;
+  border: 2px solid #69C87F;
+  resize: none;
+  margin-bottom: 10px;
+  resize: none;
+}
+.contact-container {
+  width: 100%;
+  background-color: #69C87F;
+  padding-bottom: 65px;
+
+}
+.headerline {
+  width: 90px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 65px;
+    padding-bottom: 20px;
+  }
+
+.contactus {
+  color: white;
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+  width: 1000px
+  height: 1060px;
+  font-size: 30px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #69C87F;
+  justify-content: center;
+  padding: 110px;
+}
+
+.contact-form-underline {
+  border-bottom: 2px #69C87F solid;
+  display: block;
+  width: 450px;
+}
+.contact-form-underline input{
+  width: 340px;
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #69C87F;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  width: 240px;
+  height: 80px;
+  margin-bottom: 40px;
+  float: right;
+}
+
+.btn:hover {
+  background-color: green;
+}
 /************************************
 FOOTER SECTION
 ************************************/
@@ -235,55 +368,101 @@ FOOTER SECTION
   cursor: pointer;
 }
 
-@media only screen and (max-width: 576px) {
-  .heading-primary-main {
+@media screen and (max-width: 991.98px){
+  .date-text{
+      font-size: 2.5rem;
+  }
+  .location-list{
+      font-size: 2rem;
+  }
+  .location-container{
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+  }
+  .location-maps{
+      width: 90%;
+      height: auto;
+      margin-left: 0px;
+  }
+  .contact-form, .contact-form-underline, input[type=text], textarea {
+    width: 100%;
+    margin-top: 0;
+  }
+  .btn{
     font-size: 2rem;
   }
+}
 
-  #aboutus-div h1 {
+/* Medium devices (tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .header-line{
+    width: 65px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 65px;
+  }
+  .heading-primary-main {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  #goals-inner-div {
+    padding-top: 50px;
+  }
+
+  #goals-div h3 {
+    font-size: 2.5rem;
+    padding-top: 50px;
+  }
+
+  #goals-inner-div h4 {
     font-size: 2rem;
   }
 
   #aboutus-div p {
-    font-size: 15px;
+    font-size: 1.6rem;
+  }
+
+  #goals-inner-div p{
+    font-size: 1.6rem;
+  }
+  label, .btn, textarea, input{
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .nav-title{
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .heading-primary-main {
+    font-size: 2rem;
+  }
+
+  #aboutus-div p {
+    font-size: 1.6rem;
   }
 
 	#goals-inner-div div{
 		height: 900px;
 	}
 
-  #goals-div h2 {
-    font-size: 2rem;
+  #goals-div h3 {
+    font-size: 2.5rem;
   }
 
-  #goals-inner-div h3 {
+  #goals-inner-div h4 {
     font-size: 2rem;
   }
 
   #goals-inner-div p {
-    font-size: 15px;
+    font-size: 1.6rem;
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .heading-primary-main {
-    font-size: 3rem;
-  }
-
-  #aboutus-div h1 {
-    font-size: 3rem;
-  }
-
-  #goals-div h2 {
-    font-size: 3rem;
-  }
-
-  #goals-inner-div h3 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 2rem;
-  }
-}
