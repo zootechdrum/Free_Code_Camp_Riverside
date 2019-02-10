@@ -293,7 +293,7 @@ textarea {
 }
 .contact-form {
   display: flex;
-  width: 1000px
+  width: 1000px;
   height: 1060px;
   font-size: 30px;
   font-family: Arial;
@@ -323,7 +323,6 @@ textarea {
   font-weight: bold;
   width: 240px;
   height: 80px;
-  margin-bottom: 40px;
   float: right;
 }
 
@@ -488,18 +487,6 @@ FOOTER SECTION
 
   #goals-inner-div p {
     font-size: 1.6rem;
-  }
-}
-
-@media only screen and (max-width: 499px){
-  #goals-inner-div div{
-    height: 1000px;
-  }
-}
-
-@media only screen and (max-width: 430px){
-  #goals-inner-div div{
-    height: 1250px;
   }
 }
 
