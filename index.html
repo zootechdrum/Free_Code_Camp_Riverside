@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <link rel="stylesheet"   type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="contactstyle.css">
-    <link rel="stylesheet" type="text/css" href="eventStyles.css" />
+    <link rel="stylesheet"   type="text/css" href="public/style.css" />
   </head>
 
   <body>
@@ -54,8 +52,8 @@
 
   <!--This is the start of the About Us Section-->
   <div class="container-fluid" id="aboutus-div">
-    <img src="/Free_Code_Camp_Riverside/public/images/section-headers/header-line-white.svg" width="75px" alt="linebreak">
-    <h1 class="text-center">ABOUT US</h1>
+    <img class="header-line" src="./public/images/section-headers/header-line-white.svg" alt="linebreak">
+    <h2 class="text-center">ABOUT US</h2>
     <p class="text-center">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. In fermentum et sollicitudin ac orci phasellus egestas.
@@ -65,13 +63,13 @@
   <!--This is the end of the About Us Section-->
 
   <div class="container-fluid" id="goals-div">
-    <h2 class="text-center">GOALS</h2>
+    <h3 class="text-center">GOALS</h3>
 
     <div id="goals-inner-div">
       <div class="row text-center flex-column flex-sm-row">
         <div class="col">
           <img src="./public/images/about-us-section/network-icon.svg" width="100px" alt="network icon">
-          <h3>NETWORK</h3>
+          <h4>NETWORK</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ac turpis egestas maecenas pharetra. A arcu cursus vitae congue mauris rhoncus aenean vel.
@@ -79,7 +77,7 @@
         </div>
         <div class="col">
           <img src="./public/images/about-us-section/experience-icon.svg" width="100px" alt="experience icon">
-          <h3>EXPERIENCE</h3>
+          <h4>EXPERIENCE</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ac turpis egestas maecenas pharetra. A arcu cursus vitae congue mauris rhoncus aenean vel.
@@ -93,8 +91,8 @@
 
   <!--This is the start of the events section-->
   <div class="container event-container">
-    <img class="event-header-line" src="./public/images/section-headers/header-line-green.svg"  alt="green-line">
-    <h2 class="header-text">Upcoming Events</h2>
+    <img class="header-line" src="./public/images/section-headers/header-line-green.svg"  alt="green-line">
+    <h2 class="header-text">UPCOMING EVENTS</h2>
       <div class="container date-container">
         <p class="date-text">1/13/2019 Meeting</p>
         <div class="container location-container">
@@ -135,13 +133,13 @@
   <!--This is the start of the contact section-->
       <div>
         <div class="contact-container">
-           <img class="headerline" src="./public/images/section-headers/header-line-white.svg">
-          <h1 class="contactus">
-            Contact Us
-          </h1>
+           <img class="header-line" src="./public/images/section-headers/header-line-white.svg">
+          <h2 class="contactus">
+            CONTACT US
+          </h2>
         </div> 
         <div class="contact-form">
-          <form>
+          <form method="POST" action="/register">
             <div class="contact-form-underline">
               <label for="name">Name:</label>
               <input type="text" id="name" name="name">
