@@ -3,6 +3,9 @@ const mysql   = require('mysql')
 const bodyParser = require("body-parser")
 const path    = require('path')
 
+//heroku
+const port = process.env.PORT || 3000;
+
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -25,6 +28,6 @@ app.post('/register', function(req,res){
 })
 
 
-app.listen(8080, function(){
+app.listen(port, function(){
     console.log("Server running on 8080")
-})
+});
