@@ -293,7 +293,7 @@ textarea {
 }
 .contact-form {
   display: flex;
-  width: 1000px
+  width: 1000px;
   height: 1060px;
   font-size: 30px;
   font-family: Arial;

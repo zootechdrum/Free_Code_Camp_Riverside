@@ -334,25 +334,41 @@ textarea {
 FOOTER SECTION
 ************************************/
 .footer {
+  height: 150px;
   width: 100%;
-  padding: 10px;
+  padding: 10px 10%;
   background-color: #69C87F;
   position: relative;
-  margin-top: -30px;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
 }
 
 .footer-list {
-  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   list-style-type: none;
-  font-size: 1.3rem;
+}
+.footer-list a {
+  color: white;
+}
+.footer-list a:hover, a:active{
+  color: black;
 }
 
-.footer-icons {
-  margin-top: 1.5%;
+.footer-icons{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer-icons img{
+  width: 40px;
+  border-radius: 50%;
 }
 
 .fab {
@@ -434,6 +450,15 @@ FOOTER SECTION
   label, .btn, textarea, input{
     font-size: 2rem;
   }
+  .footer{
+    font-size: 1.3rem;
+  }
+  .footer-list{
+    padding-left: 5%;
+  }
+  .footer img{
+    width: 35px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -463,6 +488,18 @@ FOOTER SECTION
 
   #goals-inner-div p {
     font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 499px){
+  #goals-inner-div div{
+    height: 1000px;
+  }
+}
+
+@media only screen and (max-width: 430px){
+  #goals-inner-div div{
+    height: 1250px;
   }
 }
 
