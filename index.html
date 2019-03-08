@@ -22,13 +22,13 @@
     <div class="w-100 collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav align-items-center">
         <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="#">About Us</a>
+          <a class="nav-link font-weight-bold" href="#aboutus-div">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="#">Events</a>
+          <a class="nav-link font-weight-bold" href="#events-div">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="#">Contact Us</a>
+          <a class="nav-link font-weight-bold" href="#contact-us-div">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -55,9 +55,7 @@
     <img class="header-line" src="./public/images/section-headers/header-line-white.svg" alt="linebreak">
     <h2 class="text-center">ABOUT US</h2>
     <p class="text-center">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. In fermentum et sollicitudin ac orci phasellus egestas.
-      Risus commodo viverra maecenas accumsan lacus vel facilisis. Viverra justo nec ultrices dui sapien eget mi.
+      Our goals at FreeCodeCamp Riverside are to provide members with the opportunity to network and contribute to open source projects. Through networking, members are able to build bonds with other developers and form groups to work on projects together. Our community supports and encourages members to work together on team projects in order to gain familiarity with working in a team environment, while also gaining hands-on experience. FreeCodeCamp Riverside welcomes all levels of experience, from new to seasoned programmers.
     </p>
   </div>
   <!--This is the end of the About Us Section-->
@@ -69,18 +67,16 @@
       <div class="row text-center flex-column flex-sm-row">
         <div class="col">
           <img src="./public/images/about-us-section/network-icon.svg" width="100px" alt="network icon">
-          <h4>NETWORK</h4>
+          <h4 class="mt-3">NETWORK</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ac turpis egestas maecenas pharetra. A arcu cursus vitae congue mauris rhoncus aenean vel.
+            Having a well-established network is essential to achieving goals, such as landing a job or building a large project. Here at FreeCodeCamp Riverside we provide members with an environment that allows them to meet other developers. Our community holds meetups in the Riverside area to provide members with the opportunity to build connections with fellow coders. The community is also on Slack for those members that are not able to attend the meetups.
           </p>
         </div>
         <div class="col">
           <img src="./public/images/about-us-section/experience-icon.svg" width="100px" alt="experience icon">
-          <h4>EXPERIENCE</h4>
+          <h4 class="mt-3">EXPERIENCE</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ac turpis egestas maecenas pharetra. A arcu cursus vitae congue mauris rhoncus aenean vel.
+            As programmers we are life-long learners, so we will always be looking to gain more experience. One of the best ways to learn is through hands-on experience. A goal of ours at FreeCodeCamp Riverside is to encourage members to share ideas and build projects with other developers. Through group projects members are able to solidify their understanding of programming concepts by taking those concepts and applying it into real life applications.
           </p>
         </div>
       </div>
@@ -90,7 +86,7 @@
   <!--This is the end of the Goals Section-->
 
   <!--This is the start of the events section-->
-  <div class="container event-container">
+  <div class="container event-container" id="events-div">
     <img class="header-line" src="./public/images/section-headers/header-line-green.svg"  alt="green-line">
     <h2 class="header-text">UPCOMING EVENTS</h2>
       <div class="container date-container">
@@ -132,7 +128,7 @@
 
   <!--This is the start of the contact section-->
       <div>
-        <div class="contact-container">
+        <div class="contact-container" id="contact-us-div">
            <img class="header-line" src="./public/images/section-headers/header-line-white.svg">
           <h2 class="contactus">
             CONTACT US
@@ -162,13 +158,23 @@
   <footer>
     <div class="footer">
       <ul class="footer-list">
-        <li>About Us</li>
-        <li>Contact</li>
-        <li>Terms and Conditions</li>
+        <li><a href="#aboutus-div">ABOUT US</a></li>
+        <li><a href="#events-div">EVENTS</a></li>
+        <li><a href="#contact-us-div">CONTACT</a></li>
       </ul>
       <div class="footer-icons">
-        <a href="https://github.com/zootechdrum/Free_Code_Camp_Riverside"><i class="fab fa-github"></i></a>
-        <a href="https://www.facebook.com/groups/free.code.camp.riverside.ca/"><i class="fab fa-facebook"></i></a>
+      	<p>CONNECT WITH US</p>
+        <div>
+        	<a class="mx-1" href="https://github.com/zootechdrum/Free_Code_Camp_Riverside">
+        		<img src="./public/images/footer/Github.png">
+        	</a>
+	        <a class="mx-1" href="https://www.facebook.com/groups/free.code.camp.riverside.ca/">
+	        	<img src="./public/images/footer/Facebook.png">
+	        </a>
+	        <a class="mx-1" href="https://wdriverside.slack.com/">
+	        	<img src="./public/images/footer/Slack.png">
+	        </a>
+        </div>
       </div>
     </div>
   </footer>
