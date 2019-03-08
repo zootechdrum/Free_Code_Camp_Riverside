@@ -3,7 +3,6 @@ const mysql   = require('mysql')
 const bodyParser = require("body-parser")
 const path    = require('path')
 
-//heroku
 const port = process.env.PORT || 3000;
 
 const app = express();
@@ -12,38 +11,36 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 const connection = mysql.createConnection({
-    host : "m7wltxurw8d2n21q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    user:"j0v4kxhchh9pskju",
-    database:"lj6tv4ctmyt1bpzv",
-    password:"re0xaprashhokixq"
+    host :   "m7wltxurw8d2n21q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    user:    "j0v4kxhchh9pskju",
+    database: "lj6tv4ctmyt1bpzv",
+    password: "re0xaprashhokixq"
+});
 
-})
 connection.connect()
-
 
 app.use("/public", express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname + '/index.html'))
 })
-
+//As of right now it is hardcoded
 app.post('/register', function(req,res){
-    var person = {
-        email_id: "zootechdrum",
-        name:"cesar",
-        message:"hello"
+    const person = {
+            email_id:req.body.email,
+            name: req.body.name,
+            message:req.body.message
     };
-
-    connection.query('INSERT INTO userTable SET ?', person, function(err, result){
+//MySQL code that will insert info in to userTable
+    connection.query('INSERT INTO userTable SET ?', person, (err, result) => {
         if(err){
-            throw err;
+            console.log(err)
         }
-        res.send("Thanks for joining our wait list!")
+        res.send("Thanks for joining FreeCodeCamp Riverside!")
     })
 })
 
-// connection.end();
 
-app.listen(3030,() => {
+app.listen(8080, function(){
     console.log("Server running on 8080")
-});
+})
