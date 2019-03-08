@@ -138,7 +138,7 @@
             CONTACT US
           </h2>
         </div> 
-        <div class="contact-form">
+        <div id="contact-form" class="contact-form">
           <form method="POST" action="/register">
             <div class="contact-form-underline">
               <label for="name">Name:</label>
@@ -151,7 +151,7 @@
             </div>
             <div>  
               <label for="message">Message:</label><br>
-              <textarea></textarea><br>
+              <textarea type="text" name="message" maxlength="45"></textarea><br>
             </div>
             <button class="btn">Send</button>
           </form>

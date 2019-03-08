@@ -24,17 +24,17 @@ app.use("/public", express.static(path.join(__dirname, 'public')));
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname + '/index.html'))
 })
-
+//As of right now it is hardcoded
 app.post('/register', function(req,res){
     const person = {
-            email_id:"rkr@gmail.com",
-            name:"Luz",
-            message:"FUCK me "
+            email_id:req.body.email,
+            name: req.body.name,
+            message:req.body.message
     };
-
+//MySQL code that will insert info in to userTable
     connection.query('INSERT INTO userTable SET ?', person, (err, result) => {
         if(err){
-            res.send("Hey, that email already exists. Try again with a new email")
+            console.log(err)
         }
         res.send("Thanks for joining FreeCodeCamp Riverside!")
     })
