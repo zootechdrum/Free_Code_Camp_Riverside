@@ -30,14 +30,20 @@ connection.connect()
 //Serves static files like images and css. 
 app.use("/public",express.static(path.join(__dirname,"public")));
 
-    app.use(cookieParser('keyboard cat'));
-    app.use(require("express-session")({ 
-        resave:false,
-        saveUninitialized:false,
-        cookie: { maxAge: 60000 }}));
-    app.use(flash());
+app.use(cookieParser('keyboard cat'));
+app.use(require("express-session")({
+    //preventsn cookies from saving if not modification happens. 
+    resave:false,
+    //Used to identify recurring users.
+    saveUninitialized:false,
+   // max-age sets the expiration date of the cookie
+   cookie: { maxAge: 60000 }
+ }));
+app.use(flash());
 
 app.use((req, res, next) => {
+    //Use res.locals is used to set intermediate data in middleware 
+    //Enables us to use is in out view available on Render. 
     res.locals.error = req.flash("error")
     res.locals.success = req.flash("success")
     next()
