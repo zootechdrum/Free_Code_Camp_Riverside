@@ -1,0 +1,29 @@
+{
+  "name": "free_code_camp_riverside",
+  "version": "1.0.0",
+  "description": "FreeCodeCamp_Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zootechdrum/Free_Code_Camp_Riverside.git"
+  },
+  "author": "Cesar Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zootechdrum/Free_Code_Camp_Riverside/issues"
+  },
+  "homepage": "https://github.com/zootechdrum/Free_Code_Camp_Riverside#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mysql": "^2.16.0"
+  }
+}

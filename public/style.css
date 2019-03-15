@@ -1,4 +1,4 @@
-/*Below font-size converts the font size so 1rem = 10px*/
+
 html {
   font-size: 62.5%;
 }
@@ -275,7 +275,7 @@ textarea {
 .contact-container {
   width: 100%;
   background-color: #69C87F;
-  padding-bottom: 65px;
+  padding-bottom: 45px;
 
 }
 .headerline {
@@ -294,7 +294,7 @@ textarea {
 .contact-form {
   display: flex;
   width: 1000px;
-  height: 1060px;
+  height: 800px;
   font-size: 30px;
   font-family: Arial;
   font-weight: bold;
@@ -314,7 +314,6 @@ textarea {
 }
 
 .btn {
-  display: inline-block;
   background-color: #69C87F;
   border: none;
   color: white;
