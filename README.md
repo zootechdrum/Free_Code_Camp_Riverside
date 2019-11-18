@@ -27,9 +27,20 @@
   This is the GitHub for the official freeCodeCamp Riverside website.
 </p>
 
+![](public/images/readMePics/free_code.gif)
+
 ## Table of Content
 * [Getting Started](#getting-started)
-* [Code of Conduct](#code-of-conduct)
+
+## Technologies Used
+
+1. HTML5
+2. CSS
+3. MySQL
+4. Javascript
+5. Express
+6. Node,js
+
 
 ## Getting Started
 <a name="getting-started"></a>
@@ -69,6 +80,3 @@ If you are new to GitHub here are some helpful links to using Git & GitHub
 
   If you have any further questions, please ask on our [Facebook](https://www.facebook.com/groups/free.code.camp.riverside.ca/) page or join our [Slack](https://wdriverside.slack.com) and ask us there. Have fun coding!
   
-## Code of Conduct
-<a name="code-of-conduct"></a>
-<!--site test-->
